@@ -6,10 +6,9 @@ from Codigos_auxiliares.rename import rename_only_file_in_folder
 from Google_Drive.puxar_arq import main
 from clear import clear_folder
 from clear import folders_to_clear
-
 import os
 
-# Limpa todas as pastas antes do download
+#Limpa todas as pastas antes do download
 for folder in folders_to_clear:
     clear_folder(folder)
 
@@ -17,7 +16,7 @@ print("Pastas limpas com sucesso!")
 
 #importando os arquivos do google drive
 
-# IDs das pastas no Google Drive e seus nomes personalizados
+#IDs das pastas no Google Drive e seus nomes personalizados
 folder_data = {
     "1chJtKUNdd0ip2twLqf42Z6K98EHUuXEY": "capa",
     "1nxvMceD_5QewLjNMp8YNN2B_XwD8hJk9": "fundo",
@@ -25,7 +24,7 @@ folder_data = {
     "1kQbWNlo1hpqXixNgxTkf0RpMZcuc6QAC": "gabarito"
 }
 
-# Baixar arquivos de cada pasta
+#Baixar arquivos de cada pasta
 for folder_id, folder_name in folder_data.items():
     print(f"Baixando arquivos da pasta {folder_name}...")
     main(folder_id, custom_folder_name=folder_name)

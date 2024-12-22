@@ -8,9 +8,9 @@ import os
 #gab com form -> pdf, novo -> pdf, juntar, juntar com a capa
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-capa_file = os.path.join(script_dir, 'Documentos_Fixos/capa.pdf')
+capa_file = os.path.join(script_dir, 'downloads/capa/capa.pdf')
 word_file = os.path.join(script_dir, 'Docx_Gerados/novo.docx')
-image_path = os.path.join(script_dir, 'Documentos_Fixos/fundo_1.png')
+image_path = os.path.join(script_dir, 'downloads/fundo/fundo_1.png')
 pdf_output = os.path.join(script_dir, 'Documentos_Intermediarios/novo.pdf')
 word_file_gab = os.path.join(script_dir, 'Docx_Gerados/gab_com_formatacao.docx')
 pdf_output_gab = os.path.join(script_dir, 'Documentos_Intermediarios/gab.pdf')
