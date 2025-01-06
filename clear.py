@@ -24,10 +24,11 @@ folders_to_clear = [
     os.path.join(script_dir, 'downloads/fundo'),
     os.path.join(script_dir, 'downloads/enunciado'),
     os.path.join(script_dir, 'downloads/gabarito'),
+    os.path.join(script_dir, 'downloads/gab_enum'),
 ]
 
 # Limpa todas as pastas antes do download
-for folder in folders_to_clear:
-    clear_folder(folder)
+# for folder in folders_to_clear:
+#     clear_folder(folder)
 
-print("Pastas limpas com sucesso!")
+# print("Pastas limpas com sucesso!")

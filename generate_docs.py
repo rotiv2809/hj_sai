@@ -21,7 +21,8 @@ folder_data = {
     "1chJtKUNdd0ip2twLqf42Z6K98EHUuXEY": "capa",
     "1nxvMceD_5QewLjNMp8YNN2B_XwD8hJk9": "fundo",
     "1CnpMtGRsLEeX58deJmM_dM8-uINNR5-Y": "enunciado",
-    "1kQbWNlo1hpqXixNgxTkf0RpMZcuc6QAC": "gabarito"
+    "1kQbWNlo1hpqXixNgxTkf0RpMZcuc6QAC": "gabarito",
+    "15Uhggzy11nmtHXET20lCwfX3yFM4IKHw": "gab_enum"
 }
 
 #Baixar arquivos de cada pasta
@@ -36,22 +37,27 @@ folder_path_1 = os.path.join(script_dir,'downloads/capa')
 folder_path_2 = os.path.join(script_dir,'downloads/fundo')
 folder_path_3 = os.path.join(script_dir,'downloads/enunciado')
 folder_path_4 = os.path.join(script_dir,'downloads/gabarito')
+folder_path_5 = os.path.join(script_dir,'downloads/gab_enum')
 
 rename_only_file_in_folder(folder_path_1,'capa.pdf')
 rename_only_file_in_folder(folder_path_2,'fundo_1.png')
 rename_only_file_in_folder(folder_path_3,'teste.docx')
 rename_only_file_in_folder(folder_path_4,'gab.docx')
+rename_only_file_in_folder(folder_path_5,'gab_enum.docx')
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 word_file = os.path.join(folder_path_3, 'teste.docx')
 gab_file = os.path.join(folder_path_4, 'gab.docx')
+gab_enum_file = os.path.join(folder_path_5, 'gab_enum.docx')
 output_file = os.path.join(script_dir, 'Docx_Gerados/novo.docx')
 output_file_gab = os.path.join(script_dir, 'Docx_Gerados/gab_com_formatacao.docx')
+output_file_g_enum = os.path.join(script_dir, 'Docx_Gerados/gab_enum_com_formatacao.docx')
 
 
 # Ajusta as margens no novo arquivo
 limit_margins_to_half_horizontal(str(word_file),str(output_file))
 format_word_in_two_columns(str(gab_file),str(output_file_gab))
+format_word_in_two_columns(str(gab_enum_file),str(output_file_g_enum))
 
 # Esse código aqui gera os documentos Word formatados em Docx_Gerados, é necessário ajustar o tamanho das imagens para que não estrapolem a margem no documento final!
 

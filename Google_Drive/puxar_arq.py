@@ -79,7 +79,8 @@ if __name__ == "__main__":
         "1chJtKUNdd0ip2twLqf42Z6K98EHUuXEY": "capa",
         "1nxvMceD_5QewLjNMp8YNN2B_XwD8hJk9": "fundo",
         "1CnpMtGRsLEeX58deJmM_dM8-uINNR5-Y": "enunciado",
-        "1kQbWNlo1hpqXixNgxTkf0RpMZcuc6QAC": "gabarito"
+        "1kQbWNlo1hpqXixNgxTkf0RpMZcuc6QAC": "gabarito",
+        "15Uhggzy11nmtHXET20lCwfX3yFM4IKHw": "gab_enum"
     }
 
     # Baixar arquivos de cada pasta
